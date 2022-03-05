@@ -1,25 +1,38 @@
 #include <stdio.h>
 
-int main(void) {
-  int number1;
-  float number2;
-  double number3;
-  char character;
+int main(void) { 
 
-  printf("Input Value For number1 = ");
-  scanf("%d",&number1);
+  int num1, num2;
 
-  printf("Input Value For number2 = ");
-  scanf("%f",&number2);
+  printf("Enter A value for num1 : ");
+  scanf("%d",&num1);
+  printf("Enter A value for num2 : ");
+  scanf("%d",&num2);
 
-  printf("Input Value For number3 = ");
-  scanf("%f",&number3);
+  if( (num1 > 10) && (num2 < 10) ){
+    
+/*
+    L R   Out
+    T T   T
+    T F   F
+    F T   F
+    F F   F
 
-  printf("Input Value For character = ");
-  scanf("% c",&character);
+*  L - Left Condition
+   R - Right Condition
+   Out - Output 
+   T - True
+   F - False
 
-  printf("\v%d - %f - %f - % c ", number1, number2, number3, 'character');
-  
+*/   
+    printf("\n (num1 > 10) & \n (num2 < 10)");
+    
+    
+  }else{
+    
+    printf("\n (num1 < 10) or \n (num2 > 10) ");
+    
+  }
   
   return 0;
 }
